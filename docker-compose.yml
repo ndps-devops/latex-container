@@ -1,3 +1,5 @@
+# It's just a template you should understand before launching...
+
 version: '3.8'
 
 services:
@@ -5,7 +7,7 @@ services:
     image: ndps/latex:latest
     container_name: latex_compiler
     volumes:
-      - ./data:/data 
+      - ./data:/data
     environment:
       - LATEX_FILE=document.tex 
     command: >

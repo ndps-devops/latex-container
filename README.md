@@ -31,7 +31,7 @@ cd ./my/project/dir
 echo "LATEX_FILE=document.tex"> .env
 ```
 
-###### Use docker compose
+###### Add and use docker compose in  your project:
 ```
 docker compose up
 ```
