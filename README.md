@@ -6,6 +6,11 @@
 - Complete Latex installation
 - Build LuaLatex by default 
 
+## Status on repository
+- ![Docker Image Version](https://img.shields.io/docker/v/ndps/latex.svg)
+- ![Docker Image Size](https://img.shields.io/docker/image-size/ndps/latex.svg)
+
+
 # Usage
 
 ## Custom Usage
