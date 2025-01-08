@@ -1,7 +1,7 @@
-FROM ubuntu:bionic
+FROM ubuntu:24.04
 
 LABEL maintainer="Ndps"
-LABEL version="1.0"
+LABEL version="2.0"
 LABEL description="A simple Latex container."
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -28,3 +28,4 @@ RUN luaotfload-tool --update
 VOLUME ["/data"]
 WORKDIR /data
 
+CMD ["sh", "-c", "lualatex -interaction=nonstopmode -halt-on-error -output-directory=/data /data/main.tex"]
