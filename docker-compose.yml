@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  latex:
+    image: ndps/latex:latest
+    container_name: latex_compiler
+    volumes:
+      - ./data:/data 
+    environment:
+      - LATEX_FILE=document.tex 
+    command: >
+      sh -c "lualatex -interaction=nonstopmode -halt-on-error -output-directory=/data /data/${LATEX_FILE}"
